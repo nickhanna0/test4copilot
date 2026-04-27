@@ -27,7 +27,7 @@ const COLUMN_LABELS: Record<ColumnId, string> = {
 };
 
 function generateId() {
-  return `task-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+  return `task-${Date.now()}-${Math.random().toString(36).slice(2, 11)}`;
 }
 
 export const TaskModal: React.FC<TaskModalProps> = ({
